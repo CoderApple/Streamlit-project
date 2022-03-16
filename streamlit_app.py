@@ -8,6 +8,10 @@ if(len(name) != 0):
     st.write("Hello! ", name)
     Semester = st.number_input('Semester', min_value = 0, max_value = 8, step = 1)
 
-if(Semester != 0):
-    st.subheader("Enter your Marks!")
-    
+col1, col2 = st.columns(2);
+
+if(Semester == 1):
+    st.header("Enter your Marks!")
+    with col1:
+        st.expander(st.subheader("Theory Marks"))
+
