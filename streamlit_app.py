@@ -18,3 +18,6 @@ if(Semester == 1):
         with st.expander("Theory Marks"):
             st.number_input("Programming in C/Applied Chemistry", min_value=0, max_value=100, step=1)
 
+    with col2:
+        with st.expander("Practical Marks"):
+            st.number_input("Applied Chemistry", min_value=0, max_value=100, step=1)
