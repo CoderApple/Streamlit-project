@@ -1,6 +1,6 @@
 import streamlit as st
 
-with st.container:
+with st.container():
     st.title("CalcGPA")
     st.header("Semester GPA Calculator for the BTech of IPU")
 
