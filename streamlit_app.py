@@ -13,5 +13,5 @@ col1, col2 = st.columns(2);
 if(Semester == 1):
     st.header("Enter your Marks!")
     with col1:
-        st.expander(st.subheader("Theory Marks"))
+        st.expander("Theory Marks")
 
