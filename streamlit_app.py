@@ -14,4 +14,5 @@ if(Semester == 1):
     st.header("Enter your Marks!")
     with col1:
         st.expander("Theory Marks")
+        st.number_input("Programming in C/Applied Chemistry", min_value=0, max_value=100, step=1)
 
