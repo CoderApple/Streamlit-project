@@ -10,8 +10,8 @@ if(len(name) != 0):
 
 col1, col2 = st.columns(2);
 
-with st.container:
-    if(Semester == 1):
+if(Semester == 1):
+    with st.container:
         st.write("Enter your Marks!")
         with col1:
             with st.expander("Theory Marks"):
