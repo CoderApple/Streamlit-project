@@ -1,12 +1,13 @@
 import streamlit as st
 
 sem = 0;
-with st.container():
-    st.title("CalcGPA")
-    st.header("Semester GPA Calculator for the BTech of IPU")
 
+st.markdown("<h1 style='text-align: center; color: red;'>CalcGPA</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; '>Semester GPA Calculator of B.Tech(EEE)</h3>", unsafe_allow_html=True)
+
+with st.container():
     name = st.text_input('Full Name')
-    if(len(name) != 0):
+    if name:
         st.write("Hello! ", name)
         Semester = st.number_input('Semester', min_value = 0, max_value = 8, step = 1)
         sem += Semester
@@ -15,7 +16,7 @@ with st.container():
     if(sem == 1):
         st.write("")
         st.write("")
-        st.write("Enter your Marks!")
+        st.markdown("<h3 style='text-align: center; '>Enter Marks!</h3>", unsafe_allow_html=True)
         with col1:
             with st.expander("Theory Marks"):
                 st.number_input("Programming in C/Applied Chemistry", min_value=0, max_value=100, step=1)
