@@ -65,13 +65,13 @@ def calc(sem):
         credits = 27
 
     with col1:
-        with st.expander("Theory Subjects"):
-            for subject in subjects:
-                marks = st.number_input("{}:".format( subject ), 0, 100)
-                if marks == 0 :
-                    flag = 1
-                num = grades(marks)
-                GPA += num * subjects[subject]
+        st.markdown("<h3 style='text-align: center; color: crimson;'>Theory Subjects</h3>", unsafe_allow_html=True)
+        for subject in subjects:
+            marks = st.number_input("{}:".format( subject ), 0, 100)
+            if marks == 0 :
+                flag = 1
+            num = grades(marks)
+            GPA += num * subjects[subject]
 
     with col2:
         with st.expander("Practical Subjects"):
