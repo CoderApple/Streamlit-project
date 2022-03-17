@@ -115,12 +115,10 @@ with st.container():
                 ans = st.button("Submit")
     
             if ans:
-                # my_bar = st.progress(0)
-                # for percent_complete in range(100):
-                #     time.sleep(0.1)
-                #     my_bar.progress(percent_complete + 1)
-                with st.spinner('Wait for it...'):
-                    time.sleep(5)
+                my_bar = st.progress(0)
+                for percent_complete in range(100):
+                    time.sleep(0.1)
+                    my_bar.progress(percent_complete + 1)
                 
                 msg = "Your GPA: {}".format(str(round(GPA,2)))
                 st.markdown(f"<h3 style='text-align: center; '>{msg}</h3>", unsafe_allow_html=True)
