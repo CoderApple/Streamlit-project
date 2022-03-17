@@ -65,7 +65,7 @@ def calc(sem):
         credits = 27
 
     with col1:
-        st.markdown("<h3 style='text-align: center; color: crimson;'>Theory Subjects</h3>", unsafe_allow_html=True)
+        st.markdown("<h4 style='text-align: center; color: crimson;'>Theory Subjects</h4>", unsafe_allow_html=True)
         for subject in subjects:
             marks = st.number_input("{}:".format( subject ), 0, 100)
             if marks == 0 :
@@ -74,13 +74,13 @@ def calc(sem):
             GPA += num * subjects[subject]
 
     with col2:
-        with st.expander("Practical Subjects"):
-            for lab in labs:
-                marks = st.number_input("{}:".format( lab ), 0, 100)
-                if marks == 0 :
-                    flag = 1
-                num = grades(marks)
-                GPA += num * labs[lab]
+        st.markdown("<h4 style='text-align: center; color: crimson;'>Practical Subjects</h4>", unsafe_allow_html=True)
+        for lab in labs:
+            marks = st.number_input("{}:".format( lab ), 0, 100)
+            if marks == 0 :
+                flag = 1
+            num = grades(marks)
+            GPA += num * labs[lab]
 
     if flag:
         st.warning("You haven't entered the marks of all subjects!")
@@ -110,21 +110,16 @@ with st.container():
             st.write("")
             st.write("")
 
-            cl1, cl2, cl3, cl4, cl5, cl6, cl7, cl8, cl9 = st.columns(9) #just for formatting XD
+            cl1, cl2, cl3, cl4, cl5, cl6, cl7, cl8, cl9 = st.columns(9)
             with cl5:
                 ans = st.button("Submit")
-                
-            
-            
     
             if ans:
-                
-
                 my_bar = st.progress(0)
-
                 for percent_complete in range(100):
                     time.sleep(0.1)
                     my_bar.progress(percent_complete + 1)
+                
                 msg = "Your GPA: {}".format(str(round(GPA,2)))
                 st.markdown(f"<h3 style='text-align: center; '>{msg}</h3>", unsafe_allow_html=True)
                 if GPA >= 8.0 :
