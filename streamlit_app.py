@@ -130,4 +130,4 @@ with st.container():
                 if GPA >= 8.0 :
                     st.balloons()
                     st.balloons()
-                    st.balloons()
+                    
