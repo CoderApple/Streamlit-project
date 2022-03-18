@@ -100,7 +100,7 @@ def calc(sem):
 
     
 
-st.markdown("<h1 style='text-align: center; color: crimson;'>CalcGPA</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black; background-color: crimson;'>CalcGPA</h1>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: center; '>Semester GPA Calculator of B.Tech(IT)</h3>", unsafe_allow_html=True)
 
 with st.container():
