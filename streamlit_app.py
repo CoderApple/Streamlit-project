@@ -75,7 +75,7 @@ def calc(sem):
         credits = 26
 
     with col1:
-        st.markdown("<h4 style='text-align: center; color: crimson; background-color: #FFE5DD; border-radius: 0px 0px 15px 15px;'>Theory Subjects</h4>", unsafe_allow_html=True)
+        st.markdown("<h4 style='text-align: center; color: crimson; background-color: #FFE5DD; border-radius: 15px;'>Theory Subjects</h4>", unsafe_allow_html=True)
         for subject in subjects:
             marks = st.number_input("{}:".format( subject ), 0, 100)
             if marks == 0 :
@@ -84,7 +84,7 @@ def calc(sem):
             GPA += num * subjects[subject]
 
     with col2:
-        st.markdown("<h4 style='text-align: center; color: crimson; background-color: #FFE5DD; border-radius: 0px 0px 15px 15px;'>Practical Subjects</h4>", unsafe_allow_html=True)
+        st.markdown("<h4 style='text-align: center; color: crimson; background-color: #FFE5DD; border-radius: 15px;'>Practical Subjects</h4>", unsafe_allow_html=True)
         for lab in labs:
             marks = st.number_input("{}:".format( lab ), 0, 100)
             if marks == 0 :
