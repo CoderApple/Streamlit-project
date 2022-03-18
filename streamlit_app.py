@@ -100,7 +100,7 @@ def calc(sem):
 
     
 
-st.markdown("<h1 style='text-align: center; color: black; background-image: linear-gradient(to bottom, #b71269, #cf5f5a, #d4996d, #d7cba4, #eef4e8);'>CalcGPA</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black; background-image: linear-gradient(to bottom, #e13434, #f0537b, #e97cb5, #d9a3dc, #d0c5ee, #cbd3f7, #cadffd, #cfebff, #b6efff, #99f3ff, #79f8ff, #5ffbf1);'>CalcGPA</h1>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: center; background-image: linear-gradient(to top, #b71269, #cf5f5a, #d4996d, #d7cba4, #eef4e8);'>Semester GPA Calculator of B.Tech(IT)</h3>", unsafe_allow_html=True)
 
 with st.container():
