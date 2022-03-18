@@ -75,7 +75,7 @@ def calc(sem):
         credits = 26
 
     with col1:
-        st.markdown("<h4 style='text-align: center; color: crimson;'>Theory Subjects</h4>", unsafe_allow_html=True)
+        st.markdown("<h4 style='text-align: center; color: crimson; background-color: #FFE5DD; border-radius: 0px 0px 15px 15px;'>Theory Subjects</h4>", unsafe_allow_html=True)
         for subject in subjects:
             marks = st.number_input("{}:".format( subject ), 0, 100)
             if marks == 0 :
@@ -84,7 +84,7 @@ def calc(sem):
             GPA += num * subjects[subject]
 
     with col2:
-        st.markdown("<h4 style='text-align: center; color: crimson;'>Practical Subjects</h4>", unsafe_allow_html=True)
+        st.markdown("<h4 style='text-align: center; color: crimson; background-color: #FFE5DD; border-radius: 0px 0px 15px 15px;'>Practical Subjects</h4>", unsafe_allow_html=True)
         for lab in labs:
             marks = st.number_input("{}:".format( lab ), 0, 100)
             if marks == 0 :
@@ -100,8 +100,8 @@ def calc(sem):
 
     
 
-st.markdown("<h1 style='text-align: center; color: black; background-color: #ED2132; border-radius: 15px 15px 0px 0px'>CalcGPA</h1>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center; background-color: #FFE5DD; border-radius: 0px 0px 15px 15px'>Semester GPA Calculator of B.Tech(IT)</h3>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black; background-color: #ED2132; border-radius: 15px 15px 0px 0px;'>CalcGPA</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; background-color: #FFE5DD; border-radius: 0px 0px 15px 15px;'>Semester GPA Calculator of B.Tech(IT)</h3>", unsafe_allow_html=True)
 
 with st.container():
     name = st.text_input("ENTER YOUR NAME")
