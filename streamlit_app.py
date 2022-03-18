@@ -113,7 +113,7 @@ with st.container():
         if sem:
             st.write("")
             st.write("")
-            st.markdown("<h3 style='text-align: center; '>Enter Marks!</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='text-align: center; background-color: #FF8177'; border-radius: 15px;>Enter Marks!</h3>", unsafe_allow_html=True)
 
             GPA = calc(sem)
 
@@ -131,7 +131,7 @@ with st.container():
                     my_bar.progress(percent_complete + 1)
                 
                 msg = "Your GPA: {}".format(str(round(GPA,2)))
-                st.markdown(f"<h3 style='text-align: center; '>{msg}</h3>", unsafe_allow_html=True)
+                st.markdown(f"<h3 style='text-align: center; background-color: #FF4245; border-radius: 15px'>{msg}</h3>", unsafe_allow_html=True)
                 if GPA >= 8.0 :
                     st.balloons()
                     st.balloons()
