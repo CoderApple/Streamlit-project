@@ -63,6 +63,16 @@ def calc(sem):
         subjects = { 'Compiler Design' : 4, 'Operating Systems' : 4, 'Data Communication & Networks' : 4, 'Web Engineering' : 3, 'Artificial Intelligence' : 4, 'Microprocessors & Microcontrollers' : 4, }
         labs = { 'Operating Systems Lab' : 1, 'Networks Lab' : 1, 'Web Engineering Lab' : 1, 'Microprocessor & Microcontroller Lab' : 1 }
         credits = 27
+    
+    elif sem == 7:
+        subjects = { 'Advanced Computer Networks' : 4, 'Cryptography and Network Security' : 3, 'Wireless Communication' : 3, 'Embedded Systems/Optoelectronics/Cloud Computing' : 3, 'Distributed Databases/Semantic Web Technologies/Software Testing/Digital Signal Processing' : 3, '.NET and C# Programming/Enterprise Computing in Java/System and Network Administration/Grid Computing' : 3, 'Advanced Database Administration/Probablistic Graphical Models/Sociology and Elements of Indian History for Engineers' : 3 }
+        labs = { 'Advanced Computer Networks Lab' : 1, 'Cryptography and Network Security Lab' : 1, 'Wireless Communication Lab' : 1, 'Lab based on Elective Group– A or B' : 1, 'Summer Training/Industrial workshop/Certification' : 1 , 'Minor Project' : 3}
+        credits = 24
+    
+    elif sem == 8:
+        subjects = { 'Mobile Computing' : 4, 'Ad hoc and Sensor Networks' : 3, 'Human Values and Professional Ethics-II' : 1, 'Big Data Analytics/Social Network Analysis/Soft Computing' : 3, 'Bio Informatics/Web Application development using .NET/VLSI Design/Information Theory and Coding/Human Computer Interaction ' : 3, 'Digital Image Processing/Next Generation Networks/GPS and GIS' : 3, 'Satellite Communication/E-Commerce and M-Commerce/Distributed Systems/Selected Topics of Recent Trends in Information Technology' : 3 }
+        labs = { 'Mobile Computing Lab' : 1, 'Ad hoc and Sensor Networks Lab' : 1, 'Lab based on Elective - I' : 1, 'Lab based on Elective - II' : 1, 'Major Project ' : 8}
+        credits = 26
 
     with col1:
         st.markdown("<h4 style='text-align: center; color: crimson;'>Theory Subjects</h4>", unsafe_allow_html=True)
@@ -98,7 +108,7 @@ with st.container():
 
     if name:
         st.write("Hello {}!".format(name))
-        sem = st.number_input("ENTER YOUR SEMESTER", 0, 6)
+        sem = st.number_input("ENTER YOUR SEMESTER", 0, 8)
 
         if sem:
             st.write("")
