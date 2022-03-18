@@ -113,7 +113,7 @@ with st.container():
         if sem:
             st.write("")
             st.write("")
-            st.markdown("<h3 style='text-align: center; background-color: #FF8177'; border-radius: 15px;>Enter Marks!</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='text-align: center; color: white; background-color: #FF8177; border-radius: 15px;'>Enter Marks!</h3>", unsafe_allow_html=True)
 
             GPA = calc(sem)
 
